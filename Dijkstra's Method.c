@@ -13,7 +13,7 @@ void main()
 		}
 	printf("\nEnter Source Vertex:\t");
 	scanf("%d",&sr);
-	for(i=1;i<=n;i++)
+	for(i=1;i<=n;i++) 
 		{
 			visited[i]=0;
 			dist[i]=cost[sr][i];
@@ -22,7 +22,7 @@ void main()
 	visited[sr]=1;
 	dist[sr]=0;
 	parent[sr]=sr;
-	for(k=1;k<=n;k++)
+	for(k=2;k<=n;k++)
 	{
 		min=999;
 		for(w=1;w<=n;w++)
@@ -55,6 +55,6 @@ void main()
 				x=parent[x];
 			}
 		}
-		printf(" %d=%d\n",sr,dist[j]);
+		printf(" %d = %d\n",sr,dist[j]);
 	}
 }
