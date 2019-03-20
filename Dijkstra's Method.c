@@ -55,6 +55,6 @@ void main()
 				x=parent[x];
 			}
 		}
-		printf("\t\tEdge Size %d=%d\n",j,dist[j]);
+		printf(" %d=%d\n",sr,dist[j]);
 	}
 }
